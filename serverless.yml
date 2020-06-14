@@ -111,9 +111,9 @@ functions:
           cors: true
           authorizer: aws_iam
   # Create our resources with separate CloudFormation templates
-  resources:
-    # API Gateway Errors
-    - ${file(resources/api-gateway-errors.yml)}
+resources:
+   # API Gateway Errors
+  - ${file(resources/api-gateway-errors.yml)}
 
     # In case you are getting error in running serverless function
     # ERROR in XX/Users/App/list.js
